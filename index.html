@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supermarket Basket</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel basket" aria-labelledby="basket-title">
+        <h1 id="basket-title">Basket</h1>
+        <p class="panel-description">
+          Click a tag to remove it from your basket.
+        </p>
+        <div id="basketItems" class="basket-items" aria-live="polite"></div>
+      </section>
+
+      <section class="panel tags" aria-labelledby="tag-title">
+        <h2 id="tag-title">Available Items</h2>
+        <p class="panel-description">
+          Click an item to add it to your basket.
+        </p>
+        <div class="tag-list" id="tagList">
+          <button class="tag" data-item="watermelon" type="button">watermelon</button>
+          <button class="tag" data-item="grape" type="button">grape</button>
+          <button class="tag" data-item="carrot" type="button">carrot</button>
+          <button class="tag" data-item="steak" type="button">steak</button>
+        </div>
+      </section>
+
+      <section class="panel add-item" aria-labelledby="add-title">
+        <h2 id="add-title">Add a Custom Item</h2>
+        <form id="addItemForm" class="add-item-form" autocomplete="off">
+          <label class="visually-hidden" for="customItemInput">Item name</label>
+          <input
+            id="customItemInput"
+            class="add-item-input"
+            name="customItem"
+            type="text"
+            placeholder="Type a food item"
+            required
+          />
+          <button class="submit-button" type="submit">Add</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

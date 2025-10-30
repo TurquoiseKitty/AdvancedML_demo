@@ -1,0 +1,12 @@
+{
+  "name": "supermarket-basket-app",
+  "version": "1.0.0",
+  "description": "Interactive supermarket basket demo",
+  "private": true,
+  "scripts": {
+    "start": "http-server -a localhost -p 5173 -c-1 ."
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
